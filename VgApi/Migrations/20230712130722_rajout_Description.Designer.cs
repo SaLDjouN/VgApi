@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using VgApi;
 
@@ -10,9 +11,11 @@ using VgApi;
 namespace VgApi.Migrations
 {
     [DbContext(typeof(ExempleContext))]
-    partial class ExempleContextModelSnapshot : ModelSnapshot
+    [Migration("20230712130722_rajout_Description")]
+    partial class rajout_Description
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

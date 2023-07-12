@@ -10,6 +10,7 @@ namespace VgApi.Models
         public int Rating { get; set; }
         public int GenreID { get; set; }
         public Genre Genre { get; set; }
+        public string Description { get; set; }  
 
     }
 }

@@ -13,6 +13,7 @@ namespace VgApi.Config
 
             builder.Property(p => p.Rating).IsRequired().HasColumnType("int");
             builder.Property(p => p.GenreID).IsRequired();
+            builder.Property(p => p.Description).IsRequired();
 
 
             //Relation
